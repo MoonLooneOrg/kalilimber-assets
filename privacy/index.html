@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — KaliLimber</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; }
+  .meta { color: #666; font-size: .9rem; margin: 0 0 2rem; }
+  .meta a { color: inherit; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; display: block; overflow-x: auto; }
+  th, td { border: 1px solid #ddd; padding: .5rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f6f6f6; }
+  code { background: #f2f2f2; padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  a { color: #2f5fd0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #131313; }
+    .meta { color: #9a9a9a; }
+    th, td { border-color: #333; }
+    th { background: #1d1d1d; }
+    code { background: #1d1d1d; }
+    a { color: #7aa2f7; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — KaliLimber</h1>
+<p class="meta">
+  Last updated: 8 August 2026 · Applies to the KaliLimber Android app
+  (<code>com.moonloone.kalilimber</code>) · Publisher: MoonLoone<br>
+  <a href="./ru/">Русская версия</a>
+</p>
+
+<p>KaliLimber is a free app for learning the kalimba. It has no accounts, no sign-in, and no ads.
+This policy explains what the app does with data, in plain terms.</p>
+
+<h2>Short version</h2>
+<ul>
+  <li>We do not ask for your name, email, phone number, or any other identifying information. The
+      nickname you type on the welcome screen stays on your device.</li>
+  <li>The microphone is used only to recognise the notes you play, in real time.
+      <strong>Audio is never recorded, stored, or sent anywhere.</strong></li>
+  <li>Your favourites, learning progress, settings, and tuning calibration are stored
+      <strong>on your device only</strong> and are deleted when you uninstall the app.</li>
+  <li>The app sends anonymous usage statistics and crash reports to Google Firebase so we can fix
+      bugs and see which parts of the app people use.</li>
+  <li>We do not sell or share your data with advertisers or data brokers.</li>
+</ul>
+
+<h2>Microphone</h2>
+<p>KaliLimber needs the <code>RECORD_AUDIO</code> permission for two features:</p>
+<ul>
+  <li><strong>Learn / Challenge</strong> — recognising whether you played the right note.</li>
+  <li><strong>Tuner</strong> — measuring the pitch of each kalimba tine so it can be calibrated.</li>
+</ul>
+<p>How it works: the microphone stream is analysed on your device, frame by frame, and immediately
+discarded. Only the detected note (for example "C4") is used by the app. Nothing is written to disk
+and nothing leaves the device. Audio is captured only while a Learn, Challenge, or Tuner session is
+open, and stops when you leave the screen.</p>
+<p>You can decline the microphone permission or revoke it later in Android settings. The rest of the
+app keeps working; only note recognition and the tuner become unavailable.</p>
+
+<h2>Data stored on your device</h2>
+<p>The following is kept locally (Android <code>DataStore</code> / app database) and never uploaded:</p>
+<table>
+  <thead><tr><th>Data</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Nickname you enter on the welcome screen</td><td>To greet you on the profile screen</td></tr>
+    <tr><td>Favourite songs and articles</td><td>So you can find them again</td></tr>
+    <tr><td>Learning progress per song</td><td>To resume where you stopped</td></tr>
+    <tr><td>Settings: colour palette, notation, language</td><td>To keep your preferences</td></tr>
+    <tr><td>Kalimba tuning calibration</td><td>To adapt note recognition to your instrument</td></tr>
+    <tr><td>Cached songs and articles</td><td>So the app works without a connection after the first load</td></tr>
+  </tbody>
+</table>
+<p>Uninstalling the app deletes all of it. The app also opts out of Android cloud backup and
+device-to-device transfer, so this data is not copied off your device by the system.</p>
+
+<h2>Data sent to third parties</h2>
+<p>KaliLimber uses Google Firebase (Google Ireland Limited / Google LLC) as a service provider:</p>
+<ul>
+  <li><strong>Firebase Analytics</strong> — anonymous usage events: which screens are opened, which
+      buttons are tapped, which song was started or finished, and technical context Firebase adds
+      automatically (app version, device model, OS version, country, and a randomly generated
+      app-instance ID). We do not set any user identifier and do not send your nickname.</li>
+  <li><strong>Firebase Crashlytics</strong> — crash and error reports: stack trace, device model, OS
+      version, app version. Sent only when the app crashes or a handled error occurs.</li>
+  <li><strong>Cloud Firestore</strong> — the app <em>downloads</em> songs, lessons, and articles
+      from our content database. This is a read-only request; no personal data is sent with it.</li>
+</ul>
+<p>Google processes this data on our behalf. See
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that
+use its services</a>.</p>
+<p>We do not use advertising SDKs, and we do not sell or share personal data with third parties for
+advertising or profiling.</p>
+
+<h2>Legal basis and retention</h2>
+<p>Where the GDPR applies, our legal basis for analytics and crash reporting is our legitimate
+interest in keeping the app working and improving it (Art. 6(1)(f)). Analytics and crash data are
+retained according to Firebase's default retention settings; local data is retained until you delete
+it or uninstall the app.</p>
+
+<h2>Your rights</h2>
+<p>Because the app has no account, we hold no record that can be linked to you personally. You can:</p>
+<ul>
+  <li>delete all local data by uninstalling the app or clearing its storage in Android settings;</li>
+  <li>revoke the microphone permission at any time in Android settings;</li>
+  <li>contact us with questions or a data request at the address below.</li>
+</ul>
+
+<h2>Children</h2>
+<p>KaliLimber is not directed at children under 13, and we do not knowingly collect personal data
+from them. If you believe a child has provided personal data, contact us and we will remove it.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this URL with an updated date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <strong>mm.mutlov@gmail.com</strong></p>
+
+</body>
+</html>
